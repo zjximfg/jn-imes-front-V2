@@ -18,7 +18,7 @@ interface OutWarehouseTableProps {
   onSelectedChange: (keys: Key[]) => void;
 }
 
-let OutWarehouseRebarTable: React.FC<OutWarehouseTableProps> = (props) => {
+const OutWarehouseRebarTable: React.FC<OutWarehouseTableProps> = (props) => {
 
   const {current, onSelectedChange} = props;
 

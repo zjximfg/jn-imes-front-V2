@@ -109,7 +109,7 @@ const OutWarehouse: React.FC = () => {
 
 
   const handleRebarEntryFinish = async (values: Partial<OutWarehouseRebarDataType>) => {
-    values = {...values, outWarehouseId: currentId}
+    values = {...values, outWarehouseId: currentId};
     if (OutWarehouseRecordId && type === 'edit') {
       // 编辑
       await updateOutWarehouseRebar(OutWarehouseRecordId, values);
