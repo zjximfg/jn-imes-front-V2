@@ -108,7 +108,7 @@ const OutWarehouse: React.FC = () => {
   };
 
 
-  const handleRebarEntryFinish = async (values: Partial<OutWarehouseRebarDataType>) => {
+  const handleOutWarehouseRebarFinish = async (values: Partial<OutWarehouseRebarDataType>) => {
     values = {...values, outWarehouseId: currentId};
     if (OutWarehouseRecordId && type === 'edit') {
       // 编辑
@@ -253,7 +253,7 @@ const OutWarehouse: React.FC = () => {
       <OutWarehouseForm visible={visible} type={type} currentId={currentId} onCancel={handleCancel}
                         onFinish={handleFinish}/>
       <OutWarehouseRebarForm visible={outWarehouseRebarVisible} type={type} currentId={OutWarehouseRecordId}
-                             onCancel={handleCancel} onFinish={handleRebarEntryFinish}/>
+                             onCancel={handleCancel} onFinish={handleOutWarehouseRebarFinish}/>
     </PageContainer>
   )
 };
